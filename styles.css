@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+}
+#history {
+  width: 50vw;
+  height: 70vh;
+  border: 1px solid rgb(240, 237, 237);
+  background-color: #efefef;
+  box-shadow: 5px 5px rgb(222, 192, 137);
+  background-color: rgb(255, 200, 99);
+}
+#display {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(92, 90, 90);
+  border-radius: 5px;
+}
+.btn {
+  border: none;
+}
