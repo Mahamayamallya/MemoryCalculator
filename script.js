@@ -15,7 +15,7 @@ function numberPress(n) {
   display.textContent = expression;
 }
 function operatorPress(op) {
-  if (expression == "" || operator != "") return;
+  if (expression == "" || operator != "" || isEvaluated) return;
   expression += op;
   number = "";
   display.textContent = expression;
@@ -23,6 +23,7 @@ function operatorPress(op) {
 function calculate() {
   output = eval(expression);
   expression = expression + " = " + output;
+  output = output.toFixed(2);
   display.textContent = output;
   history.textContent = "";
   displayHistory(expression);
